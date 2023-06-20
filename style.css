@@ -1,11 +1,176 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Julius+Sans+One&family=Roboto:wght@900&display=swap");
+@media screen and (max-width: 500px) {
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  * body .container #mobilemain {
+    background-color: #080E2F;
+  }
+  * body .container #mobilemain .homemobile {
+    height: 100vh;
+  }
+  * body .container #mobilemain .homemobile .tophomemobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .logomobile img {
+    width: 30vw;
+    height: 30vw;
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .headermobile nav {
+    display: none;
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .headermobile .hamburgermobile {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    margin: 5vh 7vh 0 0;
+    z-index: 100;
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .headermobile .hamburgermobile:after, * body .container #mobilemain .homemobile .tophomemobile .headermobile .hamburgermobile:before {
+    content: "";
+    display: block;
+    width: 8vw;
+    height: 0.7vh;
+    background-color: white;
+    margin: 1vh 0;
+    border-radius: 10px;
+    transition: 0.4s;
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .headermobile .hamburgermobile.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 20px);
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .headermobile .hamburgermobile.is-active:after {
+    transform: rotate(45deg) translate(-8px, -20px);
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .headermobile .hamburgermobile.is-active .bar {
+    opacity: 0;
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .headermobile .barmobile {
+    content: "";
+    display: block;
+    width: 8vw;
+    height: 0.7vh;
+    background-color: white;
+    margin: 1vh 0;
+    border-radius: 10px;
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .mobile-home-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: #080E2F;
+    margin: 0 0 0 0;
+    transition: 0.8s;
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .mobile-home-nav .mobilelogo img {
+    width: 25vw;
+    height: 25vw;
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .mobile-home-nav .mobilelist a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+    margin: 4vh 0 0 10vw;
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .mobile-home-nav .slidesocialsmobile {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    margin: 5vh 0 0 9vw;
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .mobile-home-nav .slidesocialsmobile img {
+    width: 8vw;
+    height: 8vw;
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .mobile-home-nav a:hover {
+    color: #757782;
+  }
+  * body .container #mobilemain .homemobile .tophomemobile .mobile-home-nav.is-active {
+    left: 0;
+  }
+  * body .container #mobilemain .homemobile .bothomemobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * body .container #mobilemain .homemobile .bothomemobile .photomobile img {
+    border-radius: 50%;
+    width: 35vw;
+    height: 35vw;
+  }
+  * body .container #mobilemain .homemobile .bothomemobile .nameheadmobile {
+    margin: 6vh 0 0 0;
+  }
+  * body .container #mobilemain .homemobile .bothomemobile .nameheadmobile #namemobile {
+    font-size: 7vw;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+  }
+  * body .container #mobilemain .homemobile .bothomemobile .nameheadmobile #jobdescripmobile {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: #B7BCD6;
+    font-size: 4vw;
+  }
+  * body .container #mobilemain .homemobile .bothomemobile .tabletheadermobile {
+    margin: 10vh 0 0 0;
+    text-align: center;
+  }
+  * body .container #mobilemain .homemobile .bothomemobile .tabletheadermobile #tabletparamobile {
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+    font-size: 3vw;
+  }
+  * body .container #mobilemain .homemobile .bothomemobile .portfoliobuttonmobile {
+    border: 1px solid #36395D;
+    border-radius: 30px;
+    background-color: #36395D;
+    padding: 2vw;
+    width: 50vw;
+    text-align: center;
+    margin: 15vh 0 0 0;
+  }
+  * body .container #mobilemain .homemobile .bothomemobile .portfoliobuttonmobile a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+    font-size: 3vw;
+  }
+  * body .container #tabletmain {
+    display: none;
+  }
+  * body .container #desktopmain {
+    display: none;
+  }
+}
 @media screen and (min-width: 700px) and (max-width: 1000px) {
   * {
     margin: 0;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
   }
-  * body .container #mobile {
+  * body .container #mobilemain {
     display: none;
   }
   * body .container #tabletmain {

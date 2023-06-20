@@ -33,6 +33,199 @@ $smallsgrey: #757782;
 // SOCIALS
 $socialsgrey: #B7BCD6;
 
+// MOBILE VERSION
+
+// Main Mobile Version (max of 500px)
+@media screen and (max-width: 500px) {
+    * {
+        margin: 0;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        body {
+            .container {
+                // MOBILE DISPLAY TO SHOW
+                #mobilemain {
+                    background-color: $mainblue;
+                    .homemobile {
+                        height: 100vh;
+                        .tophomemobile {
+                            display: flex;
+                            justify-content: space-between;
+                            .logomobile {
+                                img {
+                                    width: 30vw;
+                                    height: 30vw;
+                                }
+                            }
+                            .headermobile {
+                                nav {
+                                    display: none;
+                                }
+                                .hamburgermobile {
+                                    position: relative;
+                                    display: block;
+                                    width: 60px;
+                                    height: 60px;
+                                    cursor: pointer;
+                                    appearance: none;
+                                    background: none;
+                                    outline: none;
+                                    border: none;
+                                    margin: 5vh 7vh 0 0;
+                                    z-index: 100;
+                                }
+                                .hamburgermobile:after, .hamburgermobile:before {
+                                    content: '';
+                                    display: block;
+                                    width: 8vw;
+                                    height: .7vh;
+                                    background-color: white;
+                                    margin: 1vh 0;
+                                    border-radius: 10px;
+                                    transition: 0.4s;
+                                }
+                                // Hamburger clicked
+                                    // Makes them X
+                                    .hamburgermobile.is-active:before {
+                                        transform: rotate(-45deg) translate(-8px, 20px);
+                                    }
+                                    .hamburgermobile.is-active:after {
+                                        transform: rotate(45deg) translate(-8px, -20px);
+                                    }
+                                    .hamburgermobile.is-active .bar {
+                                        opacity: 0;
+                                    }
+                                    .barmobile {
+                                        content: '';
+                                        display: block;
+                                        width: 8vw;
+                                        height: .7vh;
+                                        background-color: white;
+                                        margin: 1vh 0;
+                                        border-radius: 10px;
+                                    }
+                                }
+                                .mobile-home-nav {
+                                    position: fixed;
+                                    top: 0;
+                                    left: 100%;
+                                    width: 100%;
+                                    height: 100vh;
+                                    display: block;
+                                    z-index: 98;
+                                    background-color: $mainblue;
+                                    margin: 0 0 0 0;
+                                    transition: .8s;
+                                    .mobilelogo {
+                                        // margin: 25vh 15vw 0 0;
+                                        // background-color: #023430;
+                                        img {
+                                            width: 25vw;
+                                            height: 25vw;
+                                        }
+                                    }
+                                    .mobilelist {
+                                        a {
+                                            display: block;
+                                            text-align: left;
+                                            text-decoration: none;
+                                            color: white;
+                                            font-family: 'Inter', sans-serif;
+                                            font-size: 5vw;
+                                            font-weight: bold;
+                                            margin: 4vh 0 0 10vw;
+                                        }
+                                    }
+                                    .slidesocialsmobile {
+                                        // background-color: #023430;
+                                        display: flex;
+                                        flex-direction: row;
+                                        gap: 2vw;
+                                        margin: 5vh 0 0 9vw;
+                                        img {
+                                            width: 8vw;
+                                            height: 8vw;
+                                        }
+                                    }
+                                }
+                                .mobile-home-nav a:hover {
+                                    color: #757782;
+                                }
+                                .mobile-home-nav.is-active {
+                                    left: 0;
+                                }
+                                // Need to set a CSS state that makes the
+                                // menu evaporate
+                            }
+                            .bothomemobile {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                .photomobile {
+                                    img {
+                                        border-radius: 50%;
+                                        width: 35vw;
+                                        height: 35vw;
+                                    }
+                                }
+                                .nameheadmobile {
+                                    margin: 6vh 0 0 0;
+                                    #namemobile {
+                                        font-size: 7vw;
+                                        font-weight: bold;
+                                        font-family: 'Inter', sans-serif;
+                                        color: $skillswhite;
+                                    }
+                                    #jobdescripmobile {
+                                        font-family: 'Inter', sans-serif;
+                                        text-align: center;
+                                        color: $socialsgrey;
+                                        font-size: 4vw;
+                                    }
+                                }
+                                .tabletheadermobile {
+                                    margin: 10vh 0 0 0;
+                                    text-align: center;
+                                    #tabletparamobile {
+                                        font-family: 'Inter', sans-serif;
+                                        color: $skillswhite;
+                                        font-size: 3vw;
+                                    }
+                                }
+                                .portfoliobuttonmobile {
+                                    border: 1px solid $portfolios;
+                                    border-radius: 30px;
+                                    background-color: $portfolios;
+                                    padding: 2vw;
+                                    width: 50vw;
+                                    text-align: center;
+                                    margin: 15vh 0 0 0;
+                                    a {
+                                        text-decoration: none;
+                                        font-family: 'Inter', sans-serif;
+                                        color: $skillswhite;
+                                        font-size: 3vw;
+                                    }
+                                }
+                            }
+                        }
+                }
+                // MAIN TABLET DISPLAY TO BE HIDDEN
+                #tabletmain {
+                    display: none;
+                }
+                // DESKTOP DISPLAY TO BE HIDDEN
+                #desktopmain {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// TABLET VERSION
+
 // Main Tablet Version (from 500px to 1000px)
 @media screen and (min-width: 700px) and (max-width: 1000px) {
     * {
@@ -42,7 +235,7 @@ $socialsgrey: #B7BCD6;
         body {
             .container {
                 // MOBILE DISPLAY TO BE HIDDEN
-                #mobile {
+                #mobilemain {
                     display: none;
                 }
                 // MAIN TABLET DISPLAY TO SHOW
