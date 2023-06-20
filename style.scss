@@ -78,7 +78,7 @@ $socialsgrey: #B7BCD6;
                                 .hamburgermobile:after, .hamburgermobile:before {
                                     content: '';
                                     display: block;
-                                    width: 12vw;
+                                    width: 10vw;
                                     height: .7vh;
                                     background-color: white;
                                     margin: 1vh 0;
@@ -88,18 +88,18 @@ $socialsgrey: #B7BCD6;
                                 // Hamburger clicked
                                     // Makes them X
                                     .hamburgermobile.is-active:before {
-                                        transform: rotate(-45deg) translate(-8px, 20px);
+                                        transform: rotate(-45deg) translate(-1px, 20px);
                                     }
                                     .hamburgermobile.is-active:after {
-                                        transform: rotate(45deg) translate(-8px, -20px);
+                                        transform: rotate(45deg) translate(-1px, -20px);
                                     }
-                                    .hamburgermobile.is-active .bar {
+                                    .hamburgermobile.is-active .barmobile {
                                         opacity: 0;
                                     }
                                     .barmobile {
                                         content: '';
                                         display: block;
-                                        width: 12vw;
+                                        width: 10vw;
                                         height: .7vh;
                                         background-color: white;
                                         margin: 1vh 0;
@@ -118,9 +118,10 @@ $socialsgrey: #B7BCD6;
                                     margin: 0 0 0 0;
                                     transition: .8s;
                                     .mobilelogo {
-                                        // margin: 25vh 15vw 0 0;
+                                        margin: 5vh 15vw 0 0;
                                         // background-color: #023430;
                                         img {
+                                            margin: -2vh 0 0 5vw;
                                             width: 25vw;
                                             height: 25vw;
                                         }
@@ -186,10 +187,10 @@ $socialsgrey: #B7BCD6;
                                         font-size: 5vw;
                                     }
                                 }
-                                .tabletheadermobile {
+                                .catchphrasemobile {
                                     margin: 10vh 0 0 0;
                                     text-align: center;
-                                    #tabletparamobile {
+                                    #catchphrasemobile {
                                         font-family: 'Inter', sans-serif;
                                         color: $skillswhite;
                                         font-size: 4vw;

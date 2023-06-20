@@ -1,4 +1,4 @@
-// JavaScript for hamburger menu
+// JavaScript for tablet menu
 
 window.onload = function () {
     window.addEventListener('scroll', function (e) {
