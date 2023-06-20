@@ -52,9 +52,10 @@ $socialsgrey: #B7BCD6;
                             display: flex;
                             justify-content: space-between;
                             .logomobile {
+                                margin: 3vh 0 0 4vw;
                                 img {
-                                    width: 30vw;
-                                    height: 30vw;
+                                    width: 25vw;
+                                    height: 25vw;
                                 }
                             }
                             .headermobile {
@@ -71,13 +72,13 @@ $socialsgrey: #B7BCD6;
                                     background: none;
                                     outline: none;
                                     border: none;
-                                    margin: 5vh 7vh 0 0;
+                                    margin: 5vh 9vw 0 0;
                                     z-index: 100;
                                 }
                                 .hamburgermobile:after, .hamburgermobile:before {
                                     content: '';
                                     display: block;
-                                    width: 8vw;
+                                    width: 12vw;
                                     height: .7vh;
                                     background-color: white;
                                     margin: 1vh 0;
@@ -98,7 +99,7 @@ $socialsgrey: #B7BCD6;
                                     .barmobile {
                                         content: '';
                                         display: block;
-                                        width: 8vw;
+                                        width: 12vw;
                                         height: .7vh;
                                         background-color: white;
                                         margin: 1vh 0;
@@ -162,6 +163,7 @@ $socialsgrey: #B7BCD6;
                                 flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
+                                margin: 7vh 0 0 0;
                                 .photomobile {
                                     img {
                                         border-radius: 50%;
@@ -172,7 +174,7 @@ $socialsgrey: #B7BCD6;
                                 .nameheadmobile {
                                     margin: 6vh 0 0 0;
                                     #namemobile {
-                                        font-size: 7vw;
+                                        font-size: 8vw;
                                         font-weight: bold;
                                         font-family: 'Inter', sans-serif;
                                         color: $skillswhite;
@@ -181,7 +183,7 @@ $socialsgrey: #B7BCD6;
                                         font-family: 'Inter', sans-serif;
                                         text-align: center;
                                         color: $socialsgrey;
-                                        font-size: 4vw;
+                                        font-size: 5vw;
                                     }
                                 }
                                 .tabletheadermobile {
@@ -190,7 +192,7 @@ $socialsgrey: #B7BCD6;
                                     #tabletparamobile {
                                         font-family: 'Inter', sans-serif;
                                         color: $skillswhite;
-                                        font-size: 3vw;
+                                        font-size: 4vw;
                                     }
                                 }
                                 .portfoliobuttonmobile {
@@ -205,10 +207,18 @@ $socialsgrey: #B7BCD6;
                                         text-decoration: none;
                                         font-family: 'Inter', sans-serif;
                                         color: $skillswhite;
-                                        font-size: 3vw;
+                                        font-size: 4vw;
                                     }
                                 }
                             }
+                        }
+
+                        // ABOUT SECTION
+                        .aboutmobile {
+                            background-color: $aboutgreen;
+                            color: $skillswhite;
+                            height: 100vh;
+                            font-family: 'Inter', sans-serif;
                         }
                 }
                 // MAIN TABLET DISPLAY TO BE HIDDEN
