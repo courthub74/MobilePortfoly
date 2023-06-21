@@ -384,5 +384,24 @@ $socialsgrey: #B7BCD6;
         margin: 0;
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
+        body {
+            .mobilecontainer {
+                display: none;
+            }
+            #tabletcontainer {
+                background-color: $mainblue;
+                height: 100vh;
+                .tophometablet {
+                    display: flex;
+                    justify-content: space-between;
+                    .logotablet {
+                        img {
+                            width: 25vw;
+                            height: 25vw;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

@@ -315,4 +315,19 @@
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
   }
+  * body .mobilecontainer {
+    display: none;
+  }
+  * body #tabletcontainer {
+    background-color: #080E2F;
+    height: 100vh;
+  }
+  * body #tabletcontainer .tophometablet {
+    display: flex;
+    justify-content: space-between;
+  }
+  * body #tabletcontainer .tophometablet .logotablet img {
+    width: 25vw;
+    height: 25vw;
+  }
 }/*# sourceMappingURL=style.css.map */
