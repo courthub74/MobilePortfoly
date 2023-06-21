@@ -1,4 +1,4 @@
-// JavaScript for mobile menu
+// JavaScript Window scroll
 
 window.onload = function () {
     window.addEventListener('scroll', function (e) {
@@ -9,7 +9,9 @@ window.onload = function () {
         // }
     });
 
-    // HOME 
+    //////////////////////// MOBILE MENU SCRIPT/////////////////////////////////
+
+    // HOME SECTION
 
     // HOME BURGER MOBILE
     const home_burger_mobile = document.querySelector('.hamburgermobile');
@@ -22,6 +24,8 @@ window.onload = function () {
         home_slide_menu.classList.toggle('is-active');
         console.log("mobile menu burger pressed");
     });
+
+    // THE HOME BUTTONS
 
     // Home Menu Selection
     const home_menu_home = document.querySelector('#home_menu_home');
@@ -44,7 +48,7 @@ window.onload = function () {
         home_slide_menu.classList.toggle('is-active');
         console.log("about selection home pressed");
     });
-    // ABOUT
+    // ABOUT SECTION
 
     // ABOUT BURGER MOBILE
     const about_burger_mobile = document.querySelector('.abouthamburgermobile');
@@ -56,5 +60,29 @@ window.onload = function () {
         about_burger_mobile.classList.toggle('is-active');
         about_slide_menu.classList.toggle('is-active');
         console.log("about menu buurger pressed");
+    });
+
+    // THE ABOUT BUTTONS 
+
+    // Home Menu Selection
+    const home_menu_about = document.querySelector('#home_menu_about');
+    // Add Eventlistener to the home selection
+        // give it the same functionality as the menu button
+            // all while taking you to the link
+    home_menu_about.addEventListener('click', function () {
+        about_burger_mobile.classList.toggle('is-active');
+        about_slide_menu.classList.toggle('is-active');
+        console.log("about selection home pressed");
+    });
+
+    // About Menu Selection
+    const about_menu_about = document.querySelector('#about_menu_about');
+    // Add Eventlistener to the home selection
+        // give it the same functionality as the menu button
+            // all while taking you to the link
+    about_menu_about.addEventListener('click', function () {
+        about_burger_mobile.classList.toggle('is-active');
+        about_slide_menu.classList.toggle('is-active');
+        console.log("about selection about pressed");
     });
 }   
