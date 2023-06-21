@@ -5,10 +5,8 @@
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
   }
-  * body .container #mobilemain {
-    background-color: #080E2F;
-  }
   * body .container #mobilemain .homemobile {
+    background-color: #080E2F;
     height: 100vh;
   }
   * body .container #mobilemain .homemobile .tophomemobile {
@@ -165,11 +163,67 @@
     color: #FFFFFF;
     font-size: 4vw;
   }
-  * body .container #mobilemain .aboutmobile {
+  * body .container #mobilemain #aboutmobile {
     background-color: #0E4946;
-    color: #FFFFFF;
+    color: white;
     height: 100vh;
+  }
+  * body .container #mobilemain #aboutmobile .topaboutmobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  * body .container #mobilemain #aboutmobile .topaboutmobile .titlemobile {
+    margin: 5vh 0 0 5vh;
+  }
+  * body .container #mobilemain #aboutmobile .topaboutmobile .titlemobile h1 {
+    font-size: 8vw;
     font-family: "Inter", sans-serif;
+  }
+  * body .container #mobilemain #aboutmobile .topaboutmobile .headermobile nav {
+    display: none;
+  }
+  * body .container #mobilemain #aboutmobile .topaboutmobile .abouthamburgermobile {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    margin: 5vh 7vw 0 0;
+    z-index: 100;
+  }
+  * body .container #mobilemain #aboutmobile .topaboutmobile .abouthamburgermobile:after, * body .container #mobilemain #aboutmobile .topaboutmobile .abouthamburgermobile:before {
+    content: "";
+    display: block;
+    width: 10vw;
+    height: 0.7vh;
+    background-color: white;
+    margin: 1vh 0;
+    border-radius: 10px;
+    transition: 0.4s;
+  }
+  * body .container #mobilemain #aboutmobile .topaboutmobile .abouthamburgermobile.is-active:before {
+    transform: rotate(-45deg) translate(-1px, 20px);
+  }
+  * body .container #mobilemain #aboutmobile .topaboutmobile .abouthamburgermobile.is-active:after {
+    transform: rotate(45deg) translate(-1px, -20px);
+  }
+  * body .container #mobilemain #aboutmobile .topaboutmobile .abouthamburgermobile.is-active .barmobile {
+    opacity: 0;
+  }
+  * body .container #mobilemain #aboutmobile .topaboutmobile .aboutbarmobile {
+    content: "";
+    display: block;
+    width: 10vw;
+    height: 0.7vh;
+    background-color: white;
+    margin: 1vh 0;
+    border-radius: 10px;
   }
   * body .container #tabletmain {
     display: none;

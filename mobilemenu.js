@@ -21,5 +21,5 @@ window.onload = function () {
         home_burger.classList.toggle('is-active');
         home_slide_menu.classList.toggle('is-active');
         console.log("mobile home menu pressed");
-    })
+    });
 }   
