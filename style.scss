@@ -43,7 +43,6 @@ $socialsgrey: #B7BCD6;
         scroll-snap-type: y mandatory;
         body {
             .container {
-
                 // MOBILE DISPLAY TO SHOW
                 #mobilemain {
                     .homemobile {
@@ -119,7 +118,7 @@ $socialsgrey: #B7BCD6;
                                     margin: 0 0 0 0;
                                     transition: .8s;
                                     .mobilelogo {
-                                        margin: 5vh 15vw 0 0;
+                                        margin: 5vh 12vw 0 0;
                                         // background-color: #023430;
                                         img {
                                             margin: -2vh 0 0 5vw;
@@ -134,9 +133,9 @@ $socialsgrey: #B7BCD6;
                                             text-decoration: none;
                                             color: white;
                                             font-family: 'Inter', sans-serif;
-                                            font-size: 5vw;
+                                            font-size: 6vw;
                                             font-weight: bold;
-                                            margin: 4vh 0 0 10vw;
+                                            margin: 4vh 0 0 8vw;
                                         }
                                     }
                                     .slidesocialsmobile {
@@ -144,10 +143,10 @@ $socialsgrey: #B7BCD6;
                                         display: flex;
                                         flex-direction: row;
                                         gap: 2vw;
-                                        margin: 5vh 0 0 9vw;
+                                        margin: 5vh 0 0 7vw;
                                         img {
-                                            width: 8vw;
-                                            height: 8vw;
+                                            width: 12vw;
+                                            height: 12vw;
                                         }
                                     }
                                 }
@@ -291,7 +290,7 @@ $socialsgrey: #B7BCD6;
                                     margin: 0 0 0 0;
                                     transition: .8s;
                                     .aboutlogomobile {
-                                        margin: 5vh 15vw 0 0;
+                                        margin: 5vh 12vw 0 0;
                                         // background-color: #023430;
                                         img {
                                             margin: -2vh 0 0 5vw;
@@ -306,19 +305,19 @@ $socialsgrey: #B7BCD6;
                                             text-decoration: none;
                                             color: white;
                                             font-family: 'Inter', sans-serif;
-                                            font-size: 5vw;
+                                            font-size: 6vw;
                                             font-weight: bold;
-                                            margin: 4vh 0 0 10vw;
+                                            margin: 4vh 0 0 8vw;
                                         }
                                     }
                                     .aboutslidesocialsmobile {
                                         display: flex;
                                         flex-direction: row;
                                         gap: 2vw;
-                                        margin: 5vh 0 0 9vw;
+                                        margin: 5vh 0 0 7vw;
                                         img {
-                                            width: 8vw;
-                                            height: 8vw;
+                                            width: 12vw;
+                                            height: 12vw;
                                         }
                                     }
                                 }
@@ -364,15 +363,16 @@ $socialsgrey: #B7BCD6;
                                     }
                                 }
                             }
+
                 }
-                // MAIN TABLET DISPLAY TO BE HIDDEN
-                #tabletmain {
-                    display: none;
-                }
-                // DESKTOP DISPLAY TO BE HIDDEN
-                #desktopmain {
-                    display: none;
-                }
+            }
+            // MAIN TABLET DISPLAY TO BE HIDDEN
+            .tabletcontainer {
+                display: none;
+            }
+            // DESKTOP DISPLAY TO BE HIDDEN
+            #desktopmain {
+                display: none;
             }
         }
     }

@@ -79,7 +79,7 @@
     transition: 0.8s;
   }
   * body .container #mobilemain .homemobile .tophomemobile .mobile-home-nav .mobilelogo {
-    margin: 5vh 15vw 0 0;
+    margin: 5vh 12vw 0 0;
   }
   * body .container #mobilemain .homemobile .tophomemobile .mobile-home-nav .mobilelogo img {
     margin: -2vh 0 0 5vw;
@@ -92,19 +92,19 @@
     text-decoration: none;
     color: white;
     font-family: "Inter", sans-serif;
-    font-size: 5vw;
+    font-size: 6vw;
     font-weight: bold;
-    margin: 4vh 0 0 10vw;
+    margin: 4vh 0 0 8vw;
   }
   * body .container #mobilemain .homemobile .tophomemobile .mobile-home-nav .slidesocialsmobile {
     display: flex;
     flex-direction: row;
     gap: 2vw;
-    margin: 5vh 0 0 9vw;
+    margin: 5vh 0 0 7vw;
   }
   * body .container #mobilemain .homemobile .tophomemobile .mobile-home-nav .slidesocialsmobile img {
-    width: 8vw;
-    height: 8vw;
+    width: 12vw;
+    height: 12vw;
   }
   * body .container #mobilemain .homemobile .tophomemobile .mobile-home-nav a:hover {
     color: #757782;
@@ -238,7 +238,7 @@
     transition: 0.8s;
   }
   * body .container #mobilemain .aboutmobile .mobile-about-nav .aboutlogomobile {
-    margin: 5vh 15vw 0 0;
+    margin: 5vh 12vw 0 0;
   }
   * body .container #mobilemain .aboutmobile .mobile-about-nav .aboutlogomobile img {
     margin: -2vh 0 0 5vw;
@@ -251,19 +251,19 @@
     text-decoration: none;
     color: white;
     font-family: "Inter", sans-serif;
-    font-size: 5vw;
+    font-size: 6vw;
     font-weight: bold;
-    margin: 4vh 0 0 10vw;
+    margin: 4vh 0 0 8vw;
   }
   * body .container #mobilemain .aboutmobile .mobile-about-nav .aboutslidesocialsmobile {
     display: flex;
     flex-direction: row;
     gap: 2vw;
-    margin: 5vh 0 0 9vw;
+    margin: 5vh 0 0 7vw;
   }
   * body .container #mobilemain .aboutmobile .mobile-about-nav .aboutslidesocialsmobile img {
-    width: 8vw;
-    height: 8vw;
+    width: 12vw;
+    height: 12vw;
   }
   * body .container #mobilemain .aboutmobile .mobile-about-nav a:hover {
     color: #757782;
@@ -302,10 +302,10 @@
     text-align: center;
     font-size: 4vw;
   }
-  * body .container #tabletmain {
+  * body .tabletcontainer {
     display: none;
   }
-  * body .container #desktopmain {
+  * body #desktopmain {
     display: none;
   }
 }
