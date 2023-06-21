@@ -216,7 +216,7 @@ $socialsgrey: #B7BCD6;
                         }
 
                         // ABOUT SECTION
-                        #aboutmobile {
+                        .aboutmobile {
                             background-color: $aboutgreen;
                             color: white;
                             height: 100vh;
@@ -224,9 +224,9 @@ $socialsgrey: #B7BCD6;
                                 display: flex;
                                 justify-content: space-between;
                                 .titlemobile {
-                                    margin: 5vh 0 0 5vh;
+                                    margin: 5.5vh 0 0 5vh;
                                     h1 {
-                                        font-size: 8vw;
+                                        font-size: 10vw;
                                         font-family: 'Inter', sans-serif;
                                     }
                                 }
@@ -266,7 +266,7 @@ $socialsgrey: #B7BCD6;
                                     .abouthamburgermobile.is-active:after {
                                         transform: rotate(45deg) translate(-1px, -20px);
                                     }
-                                    .abouthamburgermobile.is-active .barmobile {
+                                    .abouthamburgermobile.is-active .aboutbarmobile {
                                         opacity: 0;
                                     }
                                     .aboutbarmobile {
@@ -278,8 +278,92 @@ $socialsgrey: #B7BCD6;
                                         margin: 1vh 0;
                                         border-radius: 10px;
                                     }
+                                }
+                                .mobile-about-nav {
+                                    position: fixed;
+                                    top: 0;
+                                    left: 100%;
+                                    width: 100%;
+                                    height: 100vh;
+                                    display: block;
+                                    z-index: 98;
+                                    background-color: $aboutgreen;
+                                    margin: 0 0 0 0;
+                                    transition: .8s;
+                                    .aboutlogomobile {
+                                        margin: 5vh 15vw 0 0;
+                                        // background-color: #023430;
+                                        img {
+                                            margin: -2vh 0 0 5vw;
+                                            width: 25vw;
+                                            height: 25vw;
+                                        }
+                                    }
+                                    .aboutlistmobile {
+                                        a {
+                                            display: block;
+                                            text-align: left;
+                                            text-decoration: none;
+                                            color: white;
+                                            font-family: 'Inter', sans-serif;
+                                            font-size: 5vw;
+                                            font-weight: bold;
+                                            margin: 4vh 0 0 10vw;
+                                        }
+                                    }
+                                    .aboutslidesocialsmobile {
+                                        display: flex;
+                                        flex-direction: row;
+                                        gap: 2vw;
+                                        margin: 5vh 0 0 9vw;
+                                        img {
+                                            width: 8vw;
+                                            height: 8vw;
+                                        }
+                                    }
+                                }
+                                .mobile-about-nav a:hover {
+                                    color: #757782;
+                                }
+                                .mobile-about-nav.is-active {
+                                    left: 0;
+                                }
+                                // Need to set a CSS state that makes the
+                                // menu evaporate
                             }
-                        }
+                            .infoblockmobile {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                margin: 5vh 0 0 0;
+                                .infomobile {
+                                    font-family: 'Inter', sans-serif;
+                                    text-align: left;
+                                    padding: 2vh 0 0 0;
+                                    width: 60%;
+                                    font-size: 4vw;
+                                    line-height: 1.5;
+                                    margin: 5vh 0 0 0;
+                                }
+                                .resumemobile {
+                                    border: 1px solid $experiencegreenbutton;
+                                    border-radius: 30px;
+                                    // width: 40%;
+                                    width: 54vw;
+                                    background-color: $experiencegreenbutton;
+                                    padding: 3vw;
+                                    margin: 10vh 0 0 0;
+                                    a {
+                                       font-family: 'Inter', sans-serif;
+                                    //    font-weight: bold; 
+                                       text-decoration: none;
+                                       color: $learnmorebutton;
+                                       text-align: center;
+                                       font-size: 4vw;
+                                    }
+                                }
+                            }
                 }
                 // MAIN TABLET DISPLAY TO BE HIDDEN
                 #tabletmain {
